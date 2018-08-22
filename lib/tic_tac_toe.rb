@@ -10,7 +10,7 @@ class TicTacToe
     [0,4,8], # diagonal a
     [2,4,6] # diagonal b
   ]
-  
+
   def initialize(board = nil)
     @board = board || Array.new(9, " ")
   end
@@ -134,5 +134,3 @@ def play(board)
     puts "Cat's Game!"
   end
 end
-end
-
