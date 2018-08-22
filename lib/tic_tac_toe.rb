@@ -44,16 +44,16 @@ def valid_move?(index)
 
 def turn_count
      counter = 0
-     @board.each do |space|
-       if space == "X" || space == "O"
+     @board.each do |index|
+       if index == "X" || index == "O"
          counter += 1
        end
      end
-     counter
+     return counter
    end
 
 def current_player
-     turn_count(@board) % 2 == 0 ? "X" : "O"
+     turn_count % 2 == 0 ? "X" : "O"
    end
 
 def turn
